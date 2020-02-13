@@ -1,106 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="robots" content="noindex">
-        <meta name="author" content="Neska">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="author" content="Neska">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Нэскин сайт</title>
+    <title>Нэскин сайт</title>
 
-	    <link rel="icon" href="./favicon.svg">
-        
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="icon" href="./favicon.svg">
 
-        <style>
-            html, body {margin: 0; padding: 0; min-width: 320px; height: 100%}
-            body {background: #f6f6f6;
-                font-family: 'PT Sans', sans-serif;
-                font-size: 12pt; /* ~16px */
-                line-height: 1.618rem;
-                color: #222;
-            }
-            h1, h2 {
-                font-family: 'PT Serif', serif;
-                font-weight: normal;
-                border-bottom: 1px solid #a2a9b1;
-                padding-bottom: 0.25em;
-                margin-bottom: 0.75em;
-                margin-top: 1em;
-            }
-            h1 {font-size: 2rem;}
-            h2 {font-size: 1.5rem;}  
-            main {
-                background: #fff;
-                border-left: 1px solid #d1d1d1;
-                margin-left: 16.18vw;
-                padding: 0 1.618rem;
-                padding-left: 8.09vw;
-                display: flow-root;
-                box-sizing: border-box;
-                min-height: 100vh;
-                position: relative;
-            }
-            @media (max-width: 600px) {
-                main {
-                    margin-left: -1px;
-                    padding-left: 1.618em;
-                }
-            }
-            .left {
-                max-width: 41rem;
-            }
-            .right {
-                position: absolute;
-                left: calc(41rem + 8.09vw + 1.618rem);
-                max-width: 16em;
-            }
-            @media (max-width: 1200px) {
-                .right {
-                    position: static;
-                    max-width: 41rem;
-                    text-align: center;
-                }
-            }
-            img {
-                max-width: 100%;
-            }
-            figure {
-                margin: 0;
-                padding: 0;
-            }
-            figcaption {
-                font-size: 9pt;
-            }
-            a {
-                color: #0645ad;
-            }
-            a:visited {
-                color: #0b0080;
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-                <div class="left">
-                    <h1>Привет</h1>
-                    <p>Меня зовут Нэска и&nbsp;я&nbsp;решила зачем&#x2010;то сделать этот сайт. Дизайн был вдохновлён Википедией.
-                        Очень&nbsp;уж меня почему&#x2010;то пропёрло ощущение когда я&nbsp;смотрела на&nbsp;вот такую серую полосу 
-                        сбоку от&nbsp;статьи. Есть в&nbsp;этом что&#x2010;то, как&nbsp;бы это сказать&hellip; не&nbsp;знаю даже.</p>
-                </div>
-                <div class="right">
-                    <figure>
-                        <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/s960x960/48046803_1869640986497664_6384580009192849408_o.jpg?_nc_cat=105&_nc_ohc=d0dECOjUUg4AX8P2P0A&_nc_ht=scontent-arn2-2.xx&oh=0fb470b34a9fa77802c2be385fbfb6fc&oe=5EC8B255" alt="fig.1" width="320">
-                        <figcaption>Рис.&nbsp;1. Пиво Асахи.</figcaption>
-                    </figure>
-                    
-                </div>
-                <div class="left">
-                    <p>Страница на&nbsp;больших разрешениях, т.&nbsp;е. более 1200 пикселей визуально разбита на&nbsp;две части.
-                        Левая часть&nbsp;&mdash; страница текста. Длина строки в&nbsp;ней ограничена максимум 75 символами, что
-                        является оптимальным для&nbsp;комфортного чтения. Межстрочный интервал рассчитан через золотое сечение. <button onclick="location.reload(true)">Обновить страницу</button></p>
-                </div>
-        </main>
-    </body> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="left">
+            <h1>Привет</h1>
+            <p>Меня зовут Нэска и&nbsp;я&nbsp;решила зачем&#x2010;то сделать этот сайт. Дизайн был вдохновлён Википедией.
+Очень&nbsp;уж меня почему&#x2010;то пропёрло ощущение когда я&nbsp;смотрела на&nbsp;вот такую серую полосу 
+сбоку от&nbsp;статьи. Есть в&nbsp;этом что&#x2010;то, как&nbsp;бы это сказать&hellip; не&nbsp;знаю даже.</p>
+        </div>
+        <figure class="right">
+            <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/s960x960/48046803_1869640986497664_6384580009192849408_o.jpg?_nc_cat=105&_nc_ohc=d0dECOjUUg4AX8P2P0A&_nc_ht=scontent-arn2-2.xx&oh=0fb470b34a9fa77802c2be385fbfb6fc&oe=5EC8B255" alt="fig.1" width="320">
+            <figcaption>Рис.&nbsp;1. Пиво Асахи.</figcaption>
+        </figure>
+        <div class="left">
+            <p>Страница на&nbsp;больших разрешениях, т.&nbsp;е. более 1200 пикселей визуально разбита на&nbsp;две части.
+Левая часть&nbsp;&mdash; страница текста. Длина строки в&nbsp;ней ограничена максимум 75 символами, что
+является оптимальным для&nbsp;комфортного чтения. Межстрочный интервал рассчитан через золотое сечение.</p>
+            <button onclick="location.reload(true)">Обновить страницу</button>
+        </div>
+    </main>
+</body> 
 </html>
