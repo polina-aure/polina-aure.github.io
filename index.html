@@ -7,74 +7,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Нэскин сайт</title>
+
+	    <link rel="icon" href="./favicon.svg">
         
         <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap&subset=cyrillic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap&subset=cyrillic" rel="stylesheet">
 
         <style>
             html, body {margin: 0; padding: 0; min-width: 320px; height: 100%}
             body {background: #f6f6f6;
                 font-family: 'PT Sans', sans-serif;
-                font-size: 12pt;
+                font-size: 12pt; /* ~16px */
                 line-height: 1.618rem;
+                color: #222;
             }
             h1, h2 {
                 font-family: 'PT Serif', serif;
                 font-weight: normal;
                 border-bottom: 1px solid #a2a9b1;
                 padding-bottom: 0.25em;
+                margin-bottom: 0.75em;
+                margin-top: 1.618em;
             }
             h1 {font-size: 2rem;}
             h2 {font-size: 1.5rem;}  
             main {
                 background: #fff;
-                color: #222;
                 border-left: 1px solid #d1d1d1;
-                margin-left: 13vw;
-                padding: 1em;
-                padding-left: calc(1em + 6vw); /* fallback */
-                padding-left: max(1em, min(10vw, 5em));
+                margin-left: 16.18vw;
+                padding: 1rem 1.618rem;
+                padding-left: 8.09vw;
                 display: flow-root;
                 box-sizing: border-box;
                 min-height: 100vh;
+                position: relative;
             }
             @media (max-width: 600px) {
                 main {
-                    transition: margin-left 0.2s cubic-bezier(0.47, 0, 0.75, 0.72);
                     margin-left: -1px;
                     padding-left: 1em;
                 }
             }
-            .page {position: relative;}
-            .page .left {
+            .left {
                 max-width: 41rem;
-                /*line-height: 1.75em;*/
             }
-            .page .right {
+            .right {
                 position: absolute;
-                left: 43rem;
+                left: calc(41rem + 8.09vw + 1.618rem);
                 max-width: 16em;
             }
             @media (max-width: 1200px) {
-                .page .right {
+                .right {
                     position: static;
                     max-width: 41rem;
                     text-align: center;
                 }
             }
-            .page img {
+            img {
                 max-width: 100%;
             }
             figure {
                 margin: 0;
                 padding: 0;
-                padding-top: 0.5rem;
             }
             figcaption {
                 font-size: 9pt;
-                font-family: "PT Sans Caption", sans-serif;
-                padding-top: 0.25rem;
             }
             a {
                 color: #0645ad;
@@ -86,7 +83,6 @@
     </head>
     <body>
         <main>
-            <div class="page">
                 <div class="left">
                     <h1>Привет</h1>
                     <p>Меня зовут Нэска и&nbsp;я&nbsp;решила зачем&#x2010;то сделать этот сайт. Дизайн был вдохновлён Википедией.
@@ -105,7 +101,6 @@
                         Левая часть&nbsp;&mdash; страница текста. Длина строки в&nbsp;ней ограничена максимум 75 символами, что
                         является оптимальным для&nbsp;комфортного чтения. Межстрочный интервал рассчитан через золотое сечение. <button onclick="location.reload(true)">Обновить страницу</button></p>
                 </div>
-            </div>
         </main>
-    </body>t 
+    </body> 
 </html>
